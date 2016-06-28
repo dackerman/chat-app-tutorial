@@ -19,8 +19,16 @@ app.ws('/chat', function(ws, req) {
     });
 
     Object.keys(clients).forEach(function(clientId) {
-      clients[clientId].ws.send(outMsg);
+      clients[clientId].ws.send(outMsg, function(error) {
+        if (error !== undefined) {
+          console.warn('error', error);
+        }
+      });
     });
+  });
+
+  ws.on('close', function() {
+    delete clients[clientId];
   });
 });
 
