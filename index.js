@@ -2,6 +2,8 @@ var express = require('express');
 
 var app = express();
 
+app.set('port', (process.env.PORT || 3000));
+
 var expressWs = require('express-ws')(app);
 
 var nextId = 1;
@@ -34,4 +36,4 @@ app.ws('/chat', function(ws, req) {
 
 app.use(express.static('public'));
 
-app.listen(3000);
+app.listen(app.get('port'));
