@@ -12,6 +12,7 @@ function initializeChatClient() {
 
   ws.onmessage = function(event) {
     var node = document.createElement('p');
+    node.classList.add('message');
     var msg = JSON.parse(event.data);
     node.innerText = msg.clientId + ": " + msg.message;
     messages.appendChild(node);

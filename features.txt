@@ -1,0 +1,24 @@
+Features
+* Rooms / Channels
+  * Add / remove rooms to the client
+  * Chat within a room
+  * Show the unread messages
+  * Mark messages as read
+* Profile
+  * Username
+  * Online status
+  * Picture
+
+Nice to have
+* Uploading multimedia
+* Automatic hyperlinks
+* Direct messaging
+* Plugins
+* Search
+
+Technical
+* Better CSS
+* Database?
+* Login?
+* Tests
+* Deploy to AWS and/or Heroku

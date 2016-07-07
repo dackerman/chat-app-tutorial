@@ -2,18 +2,18 @@
 <html>
   <head>
     <title>Chat server</title>
+    <link rel="stylesheet" href="chat.css">
   </head>
   <body>
-    <div id="chatbox">
-      <label>
-        Enter a message:
-        <input class="messageInput" type="text">
+    <div class="chatbox">
+      <div id="messages" class="chatbox-messageArea">
+      </div>
+      <div id="chatbox" class="chatbox-inputArea">
+        <textarea class="messageInput"></textarea>
         <button class="send">Send</button>
-      </label>
+      </div>
     </div>
-    <div id="messages">
-    </div>
-    
+
     <script src="chat.js"></script>
   </body>
 </html>

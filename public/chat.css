@@ -1,0 +1,42 @@
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.chatbox {
+    max-width: 600px;
+    height: 700px;
+    margin: auto;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox-messageArea {
+    background-color: white;
+    flex-grow: 1;
+}
+
+.chatbox-messageArea > .message {
+    margin: 5px 3px;
+}
+
+.chatbox-inputArea {
+    border-top: 2px solid #aaa;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chatbox-inputArea > .messageInput {
+    border: none;
+    flex-grow: 1;
+    font-size: 120%;
+}
+
+.chatbox-inputArea > .send {
+    width: 100px;
+    background-color: lightblue;
+    color: black;
+    border: none;
+}
